@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Pitchfest: Boston 2026 | Project Showcase</title>
+  <meta name="description" content="Applied research projects pitched by City of Boston agencies at Pitchfest: Boston.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lora:wght@500;700&family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#projects">Skip to projects</a>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <span class="brand">City of Boston <span class="brand-sep">|</span> Pitchfest: Boston</span>
+      <a class="header-link" href="https://www.pilot.city/boston" target="_blank" rel="noopener">About the event</a>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container">
+        <h1>Pitchfest: Boston Projects</h1>
+        <p class="lead">City agencies are looking for university faculty and fellows to partner on short-term, high-impact applied research. Browse the projects pitched at Pitchfest: Boston and see where your expertise can help.</p>
+      </div>
+    </section>
+
+    <section class="container callout" aria-label="Event information">
+      <div>
+        <h2>About the event</h2>
+        <p>Pitchfest: Boston is organized by Pilot City and the City of Boston's Office of Emerging Technology. Up to <strong>$80,000</strong> in seed funding is available to support up to <strong>eight</strong> eligible projects.</p>
+      </div>
+      <a class="btn" href="https://www.pilot.city/boston" target="_blank" rel="noopener">Event details</a>
+    </section>
+
+    <section class="container controls" aria-label="Search and filter">
+      <label class="search" for="search">
+        <span class="sr-only">Search projects</span>
+        <input id="search" type="search" placeholder="Search by keyword, presenter, or expertise" autocomplete="off">
+      </label>
+      <div id="filters" class="chips" role="group" aria-label="Filter by theme"></div>
+      <p id="count" class="count" aria-live="polite"></p>
+    </section>
+
+    <section id="projects" class="container">
+      <div id="status" class="status" role="status">Loading projects…</div>
+      <div id="grid" class="grid"></div>
+    </section>
+  </main>
+
+  <dialog id="modal" class="modal" aria-labelledby="modal-title">
+    <button class="modal-close" id="modal-close" aria-label="Close">&times;</button>
+    <div id="modal-body"></div>
+  </dialog>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>Pitchfest: Boston is a program of Pilot City in partnership with the City of Boston Office of Emerging Technology.</p>
+    </div>
+  </footer>
+
+  <script src="config.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
