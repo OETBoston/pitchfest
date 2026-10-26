@@ -52,7 +52,7 @@ h1, h2, h3 { font-family: var(--sans), Arial, sans-serif; line-height: 1.2; }
 .search input { width: 100%; padding: 14px 16px; font: inherit; border: 2px solid var(--border); }
 .search input:focus { border-color: var(--blue); }
 .chips { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 14px; }
-.chip { font: inherit; font-size: .85rem; font-weight: 600; padding: 8px 14px; border: 2px solid var(--navy); background: #fff; color: var(--navy); cursor: pointer; border-radius: 999px; }
+.chip { font: inherit; font-family: var(--sans); font-size: .85rem; font-weight: 600; padding: 8px 14px; border: 2px solid var(--navy); background: #fff; color: var(--navy); cursor: pointer; border-radius: 999px; }
 .chip[aria-pressed="true"] { background: var(--navy); color: #fff; }
 .count { color: var(--muted); font-size: .9rem; margin: 14px 0 0; }
 
