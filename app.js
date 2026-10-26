@@ -1,6 +1,9 @@
 (function () {
-  const { SHEET_CSV_URL, FALLBACK_CSV } = window.PITCHFEST_CONFIG;
+  const { SHEET_CSV_URL, FALLBACK_CSV, SUBMIT_IDEA_URL, EXPRESS_INTEREST_URL } = window.PITCHFEST_CONFIG;
   const $ = (id) => document.getElementById(id);
+  [["btn-submit", SUBMIT_IDEA_URL], ["btn-interest", EXPRESS_INTEREST_URL]].forEach(([id, url]) => {
+    if (url) { $(id).href = url; $(id).hidden = false; }
+  });
   const state = { projects: [], theme: "All", query: "" };
 
   // RFC 4180 parser: handles quoted fields, escaped quotes, and embedded newlines.

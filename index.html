@@ -13,11 +13,24 @@
 <body>
   <a class="skip-link" href="#projects">Skip to projects</a>
 
-  <header class="site-header">
-    <div class="container header-inner">
-      <span class="brand">City of Boston <span class="brand-sep">|</span> Pitchfest: Boston</span>
-      <a class="header-link" href="https://www.pilot.city/boston" target="_blank" rel="noopener">About the event</a>
+  <header class="site-banner">
+    <div class="container banner-bar">
+      <img class="banner-logo" src="assets/logo-white_red.png" alt="City of Boston">
+      <!-- <p class="banner-text">An official website of the City of Boston</p> -->
+      <!-- <button type="button" class="banner-toggle" id="banner-toggle" aria-expanded="false" aria-controls="banner-panel">Here's how you know</button> -->
     </div>
+    <!-- <div class="banner-panel" id="banner-panel" hidden>
+      <div class="container banner-items">
+        <div class="banner-item">
+          <svg viewBox="0 0 64 64" width="40" height="40" fill="none" stroke="#fff" stroke-width="3" aria-hidden="true"><path d="M6 56h52M12 56V28M24 56V28M40 56V28M52 56V28M8 28h48L32 10z"/></svg>
+          <p><strong>Official websites use .boston.gov</strong><br>A <strong>.boston.gov</strong> website belongs to an official City of Boston government organization.</p>
+        </div>
+        <div class="banner-item">
+          <svg viewBox="0 0 64 64" width="40" height="40" fill="none" stroke="#fff" stroke-width="3" aria-hidden="true"><rect x="12" y="28" width="40" height="28"/><path d="M20 28v-8a12 12 0 0 1 24 0v8"/></svg>
+          <p><strong>Secure .boston.gov websites use HTTPS</strong><br>A <strong>lock</strong> or <strong>https://</strong> means you've safely connected to the .boston.gov website. Share sensitive information only on official, secure websites.</p>
+        </div>
+      </div>
+    </div> -->
   </header>
 
   <main>
@@ -25,15 +38,11 @@
       <div class="container">
         <h1>Pitchfest: Boston Projects</h1>
         <p class="lead">City agencies are looking for university faculty and fellows to partner on short-term, high-impact applied research. Browse the projects pitched at Pitchfest: Boston and see where your expertise can help.</p>
+        <div class="actions">
+          <a class="btn btn-primary" id="btn-submit" href="#" target="_blank" rel="noopener" hidden>Submit an idea</a>
+          <a class="btn btn-secondary" id="btn-interest" href="#" target="_blank" rel="noopener" hidden>Express interest</a>
+        </div>
       </div>
-    </section>
-
-    <section class="container callout" aria-label="Event information">
-      <div>
-        <h2>About the event</h2>
-        <p>Pitchfest: Boston is organized by Pilot City and the City of Boston's Office of Emerging Technology. Up to <strong>$80,000</strong> in seed funding is available to support up to <strong>eight</strong> eligible projects.</p>
-      </div>
-      <a class="btn" href="https://www.pilot.city/boston" target="_blank" rel="noopener">Event details</a>
     </section>
 
     <section class="container controls" aria-label="Search and filter">
@@ -64,5 +73,15 @@
 
   <script src="config.js"></script>
   <script src="app.js"></script>
+  <!-- <script>
+    (function () {
+      var btn = document.getElementById("banner-toggle"), panel = document.getElementById("banner-panel");
+      btn.addEventListener("click", function () {
+        var open = btn.getAttribute("aria-expanded") === "true";
+        btn.setAttribute("aria-expanded", String(!open));
+        panel.hidden = open;
+      });
+    })();
+  </script> -->
 </body>
 </html>
