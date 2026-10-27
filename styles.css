@@ -33,7 +33,7 @@ h1, h2, h3 { font-family: var(--sans), Arial, sans-serif; line-height: 1.2; }
 .banner-item svg { flex: none; }
 .banner-item p { margin: 0; }
 
-.hero { background: var(--blue); color: #fff; padding: 56px 0; border-bottom: 6px solid var(--navy); }
+.hero { background: #004079; color: #fff; padding: 56px 0; border-bottom: 6px solid var(--navy); }
 .hero h1 { font-size: clamp(2rem, 5vw, 3rem); margin: 0 0 12px; }
 .lead { font-size: 1.1rem; max-width: 760px; margin: 0; }
 
