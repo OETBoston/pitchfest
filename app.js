@@ -1,5 +1,5 @@
 (function () {
-  const { SHEET_CSV_URL, FALLBACK_CSV, SUBMIT_IDEA_URL, BOOK_OFFICE_HOURS_URL } = window.PITCHFEST_CONFIG;
+  const { SHEET_CSV_URL, FALLBACK_CSV, SUBMIT_IDEA_URL, PARTNER_URL, BOOK_OFFICE_HOURS_URL } = window.PITCHFEST_CONFIG;
   const $ = (id) => document.getElementById(id);
   [["btn-submit", SUBMIT_IDEA_URL], ["btn-partner", PARTNER_URL], ["btn-office-hours", BOOK_OFFICE_HOURS_URL]].forEach(([id, url]) => {
     if (url) { $(id).href = url; $(id).hidden = false; }
